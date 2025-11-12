@@ -1,0 +1,50 @@
+#accueil-avantages {
+	max-width: 1400px;
+	width: 100%;
+	margin: 100px auto;
+	background: var(--couleur-jaune-moutarde);
+	padding: 2rem;
+	border-radius: 100px;
+
+	h2 {
+		border-left: none;
+		text-align: center;
+		color: var(--couleur-texte-blanc);
+	}
+
+	.accueil-avantages-liste {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		figure {
+			display: flex;
+			flex-direction: column;
+			width: 130px;
+			gap: 20px;
+			figcaption {
+				
+				p {
+					font-family: "Montserrat-bold";
+					text-align: center;
+					color: var(--couleur-texte-blanc);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:762px) and (orientation:portrait) {
+	#accueil-avantages {
+		border-radius: 50px;
+		padding: 1rem;
+
+		h2 {
+			padding-left: 0;
+		}
+
+		.accueil-avantages-liste {
+			gap: 20px;
+		}
+	}
+}

@@ -1,0 +1,144 @@
+#notre-carte {
+	width: 70%;
+	max-width: 1400px;
+	margin: 0 auto;
+
+	h3 {
+		text-align: center;
+		margin: 50px;
+	}
+
+	h4 {
+		font-family: "Montserrat-bold";
+		font-size: 32px;
+		margin-bottom: 25px;
+		padding-left: 1rem;
+		color: var(--couleur-vert-sapin);
+		border-left: 7px solid var(--couleur-vert-sapin);
+	}
+
+	.section-menu-liste {
+		display: flex;
+		justify-content: space-between;
+		gap: 50px;
+		margin-bottom: 50px;
+
+		.menu-liste {
+			max-width: 50%;
+		}
+	}
+
+	.section-menu-liste-2 {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 50px;
+
+		.menu-liste-2 {
+			max-width: 100%;
+		}
+	}
+
+	.section-menu-complet {
+		.menu-complet {
+			display: flex;
+			align-items: center;
+			margin: 0 15px;
+			margin-bottom: 50px;
+
+			.menu-complet-separateur {
+				background: var(--couleur-vert-sapin);
+				width: 7px;
+				height: 270px;
+			}
+
+			.menu {
+				text-align: center;
+				width: 50%;
+				padding: 0 15px;
+
+				img {
+					object-fit: cover;
+				}
+
+				p {
+					font-size: 18px;
+				}
+
+				.menu-separateur {
+					margin: 10px auto;
+					background: var(--couleur-vert-sapin);
+					width: 150px;
+					height: 3px;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width:1080px) {
+	#notre-carte {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width:762px) and (orientation:portrait) {
+	#notre-carte {
+
+		h3 {
+			font-size: 32px;
+		}
+
+		h4 {
+			font-size: 24px;	
+		}
+
+		.section-menu-liste {
+			flex-direction: column;
+			gap: 10px;
+
+			.menu-liste {
+				max-width: 100%;
+			}
+		}
+
+		.section-menu-liste-2 {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 10px;
+
+			.menu-liste-2 {
+				max-width: 100%;
+			}
+		}
+
+		.section-menu-complet {
+			.menu-complet {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				margin: 15px 0;
+				margin-bottom: 10px;
+
+				.menu-complet-separateur {
+					background: var(--couleur-vert-sapin);
+					width: 270px;
+					height: 5px;
+				}
+
+				.menu {
+					text-align: center;
+					width: 100%;
+					padding: 25px 0;
+
+					.menu-separateur {
+						margin: 10px auto;
+						background: var(--couleur-vert-sapin);
+						width: 100px;
+						height: 3px;
+					}
+				}
+			}
+		}
+	}
+}

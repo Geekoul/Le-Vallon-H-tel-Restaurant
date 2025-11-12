@@ -1,0 +1,59 @@
+#accueil-offres {
+	max-width: 1400px;
+	width: 95%;
+	margin: 100px auto;
+	gap: 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	.accueil-offres-lien {
+		.accueil-offres {
+			width: 300px;
+			height: 400px;
+			position: relative;
+		
+			img {
+				object-fit: cover;
+				border-radius: 20px;
+			}
+
+			figcaption {
+				position: absolute;
+				bottom: -7%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background: rgba(0, 0, 0, 0.448);
+				border-radius: 0 0 20px 20px;
+				width: 100%;
+				height: auto;
+
+				p {
+					font-family: "Yesteryear";
+					font-size: 40px;
+					color: var(--couleur-texte-blanc);
+					text-shadow: 2px 2px 2px black;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width:762px) and (orientation:portrait) {
+	#accueil-offres {
+		gap: 50px;
+		.accueil-offres-lien {
+			width: 100%;
+			
+			.accueil-offres {
+				width: 100%;
+				img {
+					width: 100%;
+					border-radius: 10px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+.btn-lien {
+	display: flex;
+	justify-content: center;
+	font-family: "Montserrat-bold";
+	text-decoration: none;
+	background: var(--couleur-terre-cuite);
+	color: var(--couleur-texte-blanc);
+	max-width: 320px;
+	margin-top: 20px;
+	padding: .5rem 3rem;
+	border-radius: 50px;
+	font-size: 20px;
+	cursor: pointer;
+
+	&:hover {
+		background: var(--couleur-jaune-moutarde);
+	}
+}
+
+.form-bouton {
+	font-family: "Montserrat-bold";
+	text-decoration: none;
+	background: var(--couleur-terre-cuite);
+	color: var(--couleur-texte-blanc);
+	border: none;
+	max-width: 320px;
+	margin-top: 20px;
+	padding: .5rem 3rem;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+
+	&:hover {
+		background: var(--couleur-jaune-moutarde);
+	}
+}
+
+@media screen and (max-width:762px) and (orientation:portrait) {
+	.btn-lien {
+		font-size: 16px;
+		max-width: 270px;
+	}
+}

@@ -1,0 +1,26 @@
+footer {
+	background: var(--couleur-terre-cuite);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	height: 50px;
+
+	p, a {
+		color: white;
+		font-size: 18px;
+		font-weight: 600;
+	}
+}
+
+@media screen and (max-width:762px) and (orientation:portrait) {
+	footer {
+		flex-direction: column;
+		height: auto;
+		gap: 0;
+		padding: 10px;
+		p,a  { 
+			font-size: 14px;
+		}
+	}
+}

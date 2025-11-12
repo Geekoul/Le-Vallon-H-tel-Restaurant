@@ -1,0 +1,133 @@
+@import "accueil_avantages", "accueil_bandeau", "accueil_offres", "accueil_services", "admin_connexion", "admin_information", "admin_menu", "admin_page", "bloc_contenu_texte", "bloc_description", "bloc_nous-contacter", "bloc_presentation", "bouton", "contact_form", "footer", "hotel_nos_chambres",  "menu_accueil", "menu_pages", "restaurant_notre_carte", "titre_page";
+
+/* Montserrat Regular */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+       url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Montserrat Bold */
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+       url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Yesteryear Regular */
+@font-face {
+  font-family: "Yesteryear";
+  src: url("../fonts/Yesteryear-Regular.woff2") format("woff2"),
+       url("../fonts/Yesteryear-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background-site: #fff8e9;
+	--couleur-vert-sapin: #305242;
+	--couleur-vert-sauge: #6b8f71;
+	--couleur-terre-cuite: #c97c5d;
+	--couleur-jaune-moutarde: #d9a441;
+  --couleur-menu-burger: #581900;
+  --couleur-noir: #2e2e2e;
+  --couleur-blanc: #ffffff;
+  --couleur-rouge: rgb(255, 0, 0);
+	--couleur-texte-noir: #2e2e2e;
+	--couleur-texte-blanc: #ffffff;
+}
+
+.btn-lien {
+	display: flex;
+	justify-content: center;
+	font-family: "Montserrat-bold";
+	text-decoration: none;
+	background: var(--couleur-terre-cuite);
+	color: var(--couleur-texte-blanc);
+	max-width: 320px;
+	margin-top: 20px;
+	padding: .5rem 3rem;
+	border-radius: 50px;
+	font-size: 20px;
+	cursor: pointer;
+
+	&:hover {
+		background: var(--couleur-jaune-moutarde);
+	}
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+	color: var(--couleur-texte-noir);
+}
+
+body {
+	background-color: var(--background-site);
+	font-family: "Montserrat";
+}
+
+h2 {
+  font-family: "Montserrat-bold";
+  font-size: 32px;
+  margin-bottom: 25px;
+  padding-left: 1rem;
+  color: var(--couleur-vert-sapin);
+  border-left: 7px solid var(--couleur-vert-sapin);
+}
+
+h3 {
+	font-family: "Yesteryear";
+  font-size: 40px;
+  color: var(--couleur-vert-sauge);
+  margin-bottom: 15px;
+}
+
+h5 {
+  font-family: "Yesteryear";
+  color: var(--couleur-vert-sauge);
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 20px;
+  strong {
+    font-size: 20px;
+  }
+}
+
+#page {
+  margin-top: 10rem;
+}
+
+@media screen and (max-width:1080px) {
+
+}
+
+@media screen and (max-width:762px) and (orientation:portrait) {
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    strong {
+      font-size: 16px;
+    }
+  }
+}

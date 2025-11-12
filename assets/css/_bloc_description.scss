@@ -1,0 +1,25 @@
+#bloc-description {
+	max-width: 1400px;
+	width: 65%;
+	margin: 100px auto;
+
+	h2 {
+		text-align: center;
+		border-left: none;
+		margin-bottom: 50px;
+	}
+
+	p {
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width:1080px) {
+	#bloc-description {
+		width: 95%;
+
+		h2 {
+			padding-left: 0;
+		}
+	}
+}

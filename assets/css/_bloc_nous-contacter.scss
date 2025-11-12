@@ -1,0 +1,24 @@
+#bloc-nous-contacter {
+	max-width: 1400px;
+	width: 65%;
+	margin: 100px auto;
+
+	p {
+		text-align: center;
+	}
+
+	a {
+		margin: 15px auto;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:1080px) {
+	#bloc-nous-contacter {
+		width: 95%;
+
+		a {
+			max-width: 350px;
+		}
+	}
+}
